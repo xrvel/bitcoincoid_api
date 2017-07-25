@@ -12,11 +12,11 @@ if ('' != $response) {
 
 	echo '<p>High : IDR '.number_format($response['ticker']['high'], 0, ',', '.').'</p>';
 	echo '<p>Low : IDR '.number_format($response['ticker']['low'], 0, ',', '.').'</p>';
-	echo '<p>Vol BTC : '.number_format($response['ticker']['vol_btc'], 5, ',', '.').'</p>';
+	echo '<p>Vol BTC : '.number_format($response['ticker']['vol_btc'], 8, ',', '.').'</p>';
 	echo '<p>Vol IDR : IDR '.number_format($response['ticker']['vol_idr'], 0, ',', '.').'</p>';
 	echo '<p>Last : IDR '.number_format($response['ticker']['last'], 0, ',', '.').'</p>';
-	echo '<p>buy : IDR '.number_format($response['ticker']['buy'], 0, ',', '.').'</p>';
-	echo '<p>sell : IDR '.number_format($response['ticker']['sell'], 0, ',', '.').'</p>';
+	echo '<p>Buy : IDR '.number_format($response['ticker']['buy'], 0, ',', '.').'</p>';
+	echo '<p>Sell : IDR '.number_format($response['ticker']['sell'], 0, ',', '.').'</p>';
 	echo '<p>Server time : '.date('r', $response['ticker']['server_time']).'</p>';
 }
 ?>

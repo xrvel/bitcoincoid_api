@@ -3,7 +3,7 @@ require_once(dirname(__FILE__).'/includes/library.php');
 
 date_default_timezone_set('Asia/Jakarta');
 
-$curl = my_curl_get('https://vip.bitcoin.co.id/api/btc_idr/ticker');
+$curl = my_curl_get('https://indodax.com/api/btc_idr/ticker');
 
 $response = $curl['response'];
 if ('' != $response) {
